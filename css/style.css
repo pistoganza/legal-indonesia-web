@@ -1,0 +1,287 @@
+/* Main Styles */
+
+/* === Common styles === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* === Header === */
+.header {
+    background-color: #41a0ff;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__link {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.dropdown-link .arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    margin-left: 5px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language__flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social__icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* === Hero Section === */
+.hero {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero__content {
+    flex: 1;
+}
+
+.hero__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero__text {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.hero__image {
+    flex: 1;
+}
+
+.hero__image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Visa Service Section === */
+.visa-service {
+    padding: 60px 0;
+    background-color: #f1f7ff;
+    text-align: center;
+}
+
+.visa-service__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.visa-service__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.visa-service__text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+
+.visa-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.visa-type {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.visa-type:hover {
+    transform: translateY(-5px);
+}
+
+.visa-type__image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.visa-type__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visa-type__title {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* === Reviews Section === */
+.reviews {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.reviews__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.reviews__slider {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.reviews__item {
+    min-width: 350px;
+    flex: 1;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review__text {
+    margin-bottom: 15px;
+    color: #555;
+    flex-grow: 1;
+}
+
+.review__more {
+    color: #41a0ff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.review__date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.review__link {
+    color: #41a0ff;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.slider-nav__prev,
+.slider-nav__next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #41a0ff;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-nav__prev:before {
+    content: "←";
+}
+
+.slider-nav__next:before {
+    content: "→";
+}
+
+.slider-nav__prev:hover,
+.slider-nav__next:hover {
+    background-color: #41a0ff;
+    color: #fff;
+}
